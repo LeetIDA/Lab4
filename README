@@ -1,0 +1,259 @@
+---
+layout: ../../layouts/PostLayout.astro
+title: Lab 4 (Solved)
+description: Unit 4: Selection + Methods
+date: 2025-3-12
+hidden: false
+---
+
+## Question 1
+
+- [x] diamond (aka rhombus or losange)
+- [x] paralelogrammes
+- [x] Yes/No arrows
+- [x] rectangles
+- [x] Yes/No arrows
+- [x] Circle
+- [x] True/False
+- [x] 0.6086956521739131
+- [x] 0.0
+
+## Question 2
+
+```java
+import java.util.Scanner;
+
+public class Age {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your age: \n");
+        int age = scanner.nextInt();
+
+        System.out.println("You entered: " + age);
+
+        final int YOUNG_AGE = 21;
+        if (age < YOUNG_AGE) {
+            System.out.println("It's great to be young!");
+        }
+    }
+}
+
+```
+
+## Question 2
+
+```java
+import java.util.Scanner;
+
+public class Age {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your age: \n");
+        int age = scanner.nextInt();
+
+        System.out.println("You entered: " + age);
+
+        final int YOUNG_AGE = 21;
+        if (age < YOUNG_AGE) {
+            System.out.println("It's great to be young!");
+        }
+    }
+}
+
+```
+
+## Question 3
+
+```java
+import java.util.Scanner;
+
+public class Age {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your age: \n");
+        int age = scanner.nextInt();
+
+        System.out.println("You entered: " + age);
+
+        final int YOUNG_AGE = 21;
+        if (age < YOUNG_AGE) {
+            System.out.println("It's great to be young!");
+        } else {
+            System.out.println("Age is a state of mind!");
+        }
+    }
+}
+
+
+```
+
+## Question 4
+
+```java
+import java.util.Scanner;
+
+public class PasswordChecker {
+    private static final String CORRECT_PASSWORD = "C0RR3CT";
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Please enter password: \n");
+        String password = scanner.nextLine();
+
+        if (password.equals(CORRECT_PASSWORD)) {
+            System.out.println("You have gained access to the system!");
+        } else {
+            System.out.println("Your password is incorrect!");
+        }
+    }
+}
+
+
+```
+
+## Question 5
+
+```java
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Choose an option to display the corresponding piece of information:");
+        System.out.println("1.Capital of Bahrain");
+        System.out.println("2.Population of Bahrain");
+        System.out.println("3.Climate of Bahrain");
+        System.out.println("4.GDP of Bahrain");
+        System.out.println("5.Size of Bahrain (square km)");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println("Your choice was 1. The capital of Bahrain is Manama.");
+                break;
+            case 2:
+                System.out.println("Your choice was 2. The population of Bahrain: 1,039,297.");
+                break;
+            case 3:
+                System.out.println("Your choice was 3. Bahrain has two seasons: an extremely hot summer and a relatively mild winter.");
+                break;
+            case 4:
+                System.out.println("Your choice was 4. Bahrain's GDP was 35.31 billion USD in 2017.");
+                break;
+            case 5:
+                System.out.println("Your choice was 5. Bahrain is 765.3 square km.");
+                break;
+            default:
+                System.out.println("You entered a wrong choice.");
+        }
+    }
+}
+
+```
+
+## Question 6
+
+```java
+import java.util.Scanner;
+
+public class Grade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter your exam mark ");
+        int mark = scanner.nextInt();
+
+        if (mark >= 85 && mark <= 100) {
+            System.out.println("Your grade is A");
+        } else if (mark >= 70 && mark <= 84) {
+            System.out.println("Your grade is B");
+        } else if (mark >= 60 && mark <= 69) {
+            System.out.println("Your grade is C");
+        } else if (mark >= 0 && mark <= 59) {
+            System.out.println("Your grade is D");
+        } else {
+            System.out.println("Invalid mark entered");
+        }
+    }
+}
+
+```
+
+## Question 7
+
+```java
+import java.util.Scanner;
+
+public class Unit4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String password = "C0RR3CT";
+        int phoneNumber = 1234;
+
+        System.out.print("Please enter password: \n");
+        String inputPassword = scanner.nextLine();
+
+        if (inputPassword.equals(password)) {
+            System.out.print("Please enter the last 4 digits of your phone number: \n");
+            int inputPhoneNumber = scanner.nextInt();
+
+            if (inputPhoneNumber == phoneNumber) {
+                System.out.println("You have gained access to the system!");
+            } else {
+                System.out.println("Your phone number is incorrect!");
+            }
+        } else {
+            System.out.println("Your password is incorrect!");
+        }
+    }
+}
+
+```
+
+## Question 8
+
+```java
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Choose an option to display the corresponding piece of information:");
+        System.out.println("1.Capital of Bahrain");
+        System.out.println("2.Population of Bahrain");
+        System.out.println("3.Climate of Bahrain");
+        System.out.println("4.GDP of Bahrain");
+        System.out.println("5.Size of Bahrain (square km)");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println("Your choice was 1. The capital of Bahrain is Manama.");
+                break;
+            case 2:
+                System.out.println("Your choice was 2. The population of Bahrain: 1,039,297.");
+                break;
+            case 3:
+                System.out.println("Your choice was 3. Bahrain has two seasons: an extremely hot summer and a relatively mild winter.");
+                break;
+            case 4:
+                System.out.println("Your choice was 4. Bahrain's GDP was 35.31 billion USD in 2017.");
+                break;
+            case 5:
+                System.out.println("Your choice was 5. Bahrain is 765.3 square km.");
+                break;
+            default:
+                System.out.println("You entered a wrong choice.");
+        }
+    }
+}
+
+```
